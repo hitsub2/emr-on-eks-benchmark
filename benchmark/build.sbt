@@ -10,12 +10,12 @@ unmanagedBase <<= baseDirectory { base => base / "libs" }
 
 // Dependencies required for this project
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "3.2.0" % "provided",
-  "org.apache.spark" %% "spark-sql" % "3.2.0" % "provided",
+  "org.apache.spark" %% "spark-core" % "3.4.0" % "provided",
+  "org.apache.spark" %% "spark-sql" % "3.4.0" % "provided",
   // JSON serialization
-  "org.json4s" %% "json4s-native" % "3.6.7",
+  "org.json4s" %% "json4s-native" % "3.7.0-M11",
   // scala logging
-  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.0"
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
 )
 
 // Remove stub classes
